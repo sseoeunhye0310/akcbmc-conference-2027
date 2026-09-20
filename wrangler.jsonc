@@ -1,0 +1,24 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "akcbmc-conference-2027",
+  "main": "./src/index.js",
+  "compatibility_date": "2026-09-20",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    // 실제 구글폼 주소로 바꿔주세요.
+    "REGISTRATION_FORM_URL": "https://forms.gle/cww1sE5vALtbDSMj6"
+  }
+
+  // 현재 사이트는 구글폼을 사용하므로 D1이 필요하지 않습니다.
+  // 나중에 자체 신청 폼/관리자 페이지를 만들 때 아래 형태로 추가하면 됩니다.
+  // ,"d1_databases": [
+  //   {
+  //     "binding": "DB",
+  //     "database_name": "akcbmc-conference-db",
+  //     "database_id": "여기에-wrangler-d1-create로-발급받은-ID"
+  //   }
+  // ]
+}
