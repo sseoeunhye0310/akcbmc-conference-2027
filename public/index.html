@@ -434,6 +434,10 @@ body,button,input,select,textarea{font-family:var(--font)}
  .edition{font-size:13px}
 }
 
+/* Hero: video-only right column */
+.hero__feature.hero__feature--video{padding:0;border:0;background:transparent;max-width:none;width:100%;margin:0;align-self:center}
+.hero__feature--video .hero__video{margin:0;max-width:none;width:100%}
+.hero__feature--video .video-frame{padding-bottom:56.25%;border:0;border-radius:8px;box-shadow:0 18px 48px rgba(0,0,0,.2)}
 </style>
 </head>
 <body>
@@ -498,11 +502,7 @@ body,button,input,select,textarea{font-family:var(--font)}
       <a class="btn btn--ghost" href="#trips">비전트립 살펴보기</a>
     </div>
 
-    </div><aside class="hero__feature" aria-label="대회 주요 안내"><div class="edition"><span>ASIA KOREAN<br>CBMC CONFERENCE</span><b>06</b></div><div class="feature__date">25—27 <span>FEBRUARY 2027</span></div><div class="early"><span>할인등록 · 2026. 11. 30.까지</span><strong>US$490 <small>/ 성인 1인 · 숙박 포함</small></strong><a href="#registration">등록비 자세히 보기 ↗</a></div><div class="hero__video"><p class="video-label">CONFERENCE FILM · 대회 홍보 영상</p>
-      <div class="video-frame">
-        <iframe src="https://www.youtube.com/embed/POz0Vna0mLs" title="제6차 아시아한인 CBMC 대회 홍보 영상" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </div></aside>
+    </div><aside class="hero__feature hero__feature--video" aria-label="대회 홍보 영상"><div class="hero__video"><div class="video-frame"><iframe src="https://www.youtube.com/embed/POz0Vna0mLs" title="제6차 아시아한인 CBMC 대회 홍보 영상" loading="eager" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div></aside>
   </div>
 </header>
 
