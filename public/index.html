@@ -439,6 +439,39 @@ body,button,input,select,textarea{font-family:var(--font)}
 .hero__feature--video .hero__video{margin:0;max-width:none;width:100%}
 .hero__feature--video .video-frame{padding-bottom:56.25%;border:0;border-radius:8px;box-shadow:0 18px 48px rgba(0,0,0,.2)}
 </style>
+<style>
+/* Registration fee — emphasized */
+.reg-deadline{background:linear-gradient(transparent 58%,#e9cf9a 58%);color:inherit;font-weight:700;padding:0 2px}
+.reg-grid{display:grid;grid-template-columns:1.12fr 1fr;gap:24px;align-items:stretch}
+.reg-card{position:relative;background:#fff;border:1px solid var(--line);padding:36px 40px 34px;display:flex;flex-direction:column}
+.reg-card--early{background:var(--navy-deep);border:2px solid var(--gold-light);color:#fff;box-shadow:0 22px 50px rgba(8,28,53,.22)}
+.reg-card__top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.reg-card__name{font-size:22px;font-weight:750}
+.reg-card--early .reg-card__name{color:var(--gold-light)}
+.reg-card__en{font-size:14px;letter-spacing:.12em;color:#627485}
+.reg-badge{background:var(--gold-light);color:#081c35;font-size:15px;font-weight:750;padding:6px 13px;border-radius:999px;white-space:nowrap}
+.reg-card__period{font-size:19px;margin-top:8px;color:#607181;font-weight:600}
+.reg-card--early .reg-card__period{color:#dbe5f0}
+.reg-card__price{font-size:84px;font-weight:700;letter-spacing:-.045em;line-height:1.05;margin-top:22px;display:flex;align-items:baseline;flex-wrap:wrap}
+.reg-card__price .cur{font-size:.42em;font-weight:600;letter-spacing:0;margin-right:4px}
+.reg-card__price small{font-size:19px;font-weight:500;letter-spacing:0;margin-left:10px;color:#607181}
+.reg-card--early .reg-card__price small{color:#c6d4e3}
+.reg-card__cap{font-size:18px;margin-top:8px;color:#607181}
+.reg-card--early .reg-card__cap{color:#c6d4e3}
+.reg-card__row{display:flex;justify-content:space-between;align-items:center;margin:26px 0 0;padding-top:16px;border-top:1px solid #9caab455;font-size:19px}
+.reg-card__row dd{margin:0;font-weight:700}
+.reg-card__btn{display:block;text-align:center;margin-top:24px;background:var(--gold-light);color:#081c35;font-weight:750;font-size:19px;padding:16px;border-radius:4px;text-decoration:none}
+.reg-card__btn:hover{filter:brightness(1.05)}
+.reg-card.is-closed{opacity:.55}
+.reg-sub{font-size:22px;font-weight:700;margin:44px 0 16px}
+.reg-extra{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.reg-mini{background:#fff;border:1px solid var(--line);border-top:3px solid #c7a161;padding:22px 24px}
+.reg-mini__label{font-size:17px;font-weight:700;color:#3d4c5b}
+.reg-mini__price{font-size:34px;font-weight:700;letter-spacing:-.03em;margin-top:6px;line-height:1.25}
+.reg-mini__price small{font-size:16px;font-weight:500;color:#607181;letter-spacing:0}
+.reg-mini__note{font-size:16px;color:#607181;margin-top:4px}
+@media(max-width:1000px){.reg-grid,.reg-extra{grid-template-columns:1fr;gap:14px}.reg-card{padding:28px 24px}.reg-card__price{font-size:66px}.reg-sub{margin-top:34px}.reg-mini{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:12px;padding:18px 20px}.reg-mini__price{grid-column:2;grid-row:1/3;font-size:27px;margin:0;text-align:right}.reg-mini__note{grid-column:1}}
+</style>
 </head>
 <body>
 <a class="skip" href="#overview">본문 바로가기</a>
@@ -553,10 +586,17 @@ body,button,input,select,textarea{font-family:var(--font)}
 
 
 <section class="registration" id="registration"><div class="section">
-<div class="section__head"><p class="section__kicker">02 / REGISTRATION</p><h2 class="section__title">함께할 준비,<br>등록 안내부터 확인하세요.</h2><p class="section__desc">2026년 11월 30일까지 할인등록이 가능합니다.<br>모든 금액은 미국 달러(USD) 기준입니다.</p></div>
-<div class="price-grid"><article class="price-card price-card--early"><div class="price-label">할인등록 <span>EARLY REGISTRATION</span></div><h3>2026. 11. 30.까지</h3><p class="price">US$490 <small>/ 1인</small></p><p class="price-caption">성인 · 숙박 포함</p><div class="price-row"><span>성인 미숙박</span><b>US$380</b></div><div class="price-row"><span>취소수수료</span><b>US$110</b></div></article>
-<article class="price-card"><div class="price-label">정상등록 <span>STANDARD REGISTRATION</span></div><h3>2026. 12. 1.부터</h3><p class="price">US$540 <small>/ 1인</small></p><p class="price-caption">성인 · 숙박 포함</p><div class="price-row"><span>성인 미숙박</span><b>US$430</b></div><div class="price-row"><span>취소수수료</span><b>US$220</b></div></article></div>
-<div class="fee-table-wrap"><table class="fee-table"><caption>비전세대·자녀 및 추가 숙박 요금</caption><thead><tr><th scope="col">구분</th><th scope="col">금액</th><th scope="col">안내</th></tr></thead><tbody><tr><th scope="row">비전세대</th><td>US$390 / 1인</td><td>35세 이하 청년·대학</td></tr><tr><th scope="row">동반 자녀</th><td>US$200 / 1인</td><td>4세 이상~18세 이하 · 숙소비 별도</td></tr><tr><th scope="row">추가 숙박</th><td>US$110 / 1박</td><td>2인 1실 기준</td></tr><tr><th scope="row">싱글차지</th><td>US$55 / 1박 추가</td><td>싱글룸 희망 시</td></tr></tbody></table></div>
+<div class="section__head"><p class="section__kicker">02 / REGISTRATION FEE</p><h2 class="section__title">등록회비 안내</h2><p class="section__desc"><mark class="reg-deadline">2026년 11월 30일까지</mark> 할인등록이 가능합니다.<br>모든 금액은 미국 달러(USD) 기준입니다.</p></div>
+<div class="reg-grid">
+<article class="reg-card reg-card--early"><div class="reg-card__top"><span class="reg-card__name">할인등록</span><span class="reg-badge" id="regDday">US$50 할인</span></div><p class="reg-card__period">2026. 11. 30.까지</p><p class="reg-card__price"><span class="cur">US$</span>490<small>/ 1인</small></p><p class="reg-card__cap">성인 · 숙박 포함</p><dl class="reg-card__row"><dt>취소수수료</dt><dd>US$110</dd></dl><a class="reg-card__btn js-apply" href="https://forms.gle/fpMiddjG124GDHyL8" target="_blank" rel="noopener">할인가로 신청하기 ↗</a></article>
+<article class="reg-card"><div class="reg-card__top"><span class="reg-card__name">정상등록</span><span class="reg-card__en">STANDARD</span></div><p class="reg-card__period">2026. 12. 1.부터</p><p class="reg-card__price"><span class="cur">US$</span>540<small>/ 1인</small></p><p class="reg-card__cap">성인 · 숙박 포함</p><dl class="reg-card__row"><dt>취소수수료</dt><dd>US$220</dd></dl></article>
+</div>
+<h3 class="reg-sub">그 외 요금</h3>
+<div class="reg-extra">
+<div class="reg-mini"><p class="reg-mini__label">비전세대</p><p class="reg-mini__price">US$390 <small>/ 1인</small></p><p class="reg-mini__note">35세 이하 청년·대학</p></div>
+<div class="reg-mini"><p class="reg-mini__label">추가 숙박비</p><p class="reg-mini__price">US$110 <small>/ 1박</small></p><p class="reg-mini__note">2인 1실 기준</p></div>
+<div class="reg-mini"><p class="reg-mini__label">싱글차지</p><p class="reg-mini__price">+US$55 <small>/ 1박</small></p><p class="reg-mini__note">싱글룸 희망 시 1박당 추가</p></div>
+</div>
 <p class="fee-note">※ 모든 일정에 항공료는 포함되지 않습니다. 투어 참가비는 미정이며, 확정 후 별도 안내합니다.</p>
 </div></section>
 
@@ -724,7 +764,7 @@ body,button,input,select,textarea{font-family:var(--font)}
   </div>
 </section>
 
-<div class="mobile-apply"><span>2027. 2. 25—27 <b>제6차 AKCC</b></span><a class="btn btn--gold js-apply" href="https://forms.gle/fpMiddjG124GDHyL8" target="_blank" rel="noopener">대회 신청하기 ↗</a></div>
+<div class="mobile-apply"><span id="mobileFee">할인등록 ~11.30 <b>US$490 / 1인</b></span><a class="btn btn--gold js-apply" href="https://forms.gle/fpMiddjG124GDHyL8" target="_blank" rel="noopener">대회 신청하기 ↗</a></div>
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="footer__inner">
@@ -786,5 +826,20 @@ document.querySelectorAll(".trip__btn").forEach(function(btn, index){
 });
 </script>
 
+<script>
+(function(){
+  var end=new Date('2026-12-01T00:00:00+09:00').getTime(), now=Date.now();
+  var badge=document.getElementById('regDday'), mob=document.getElementById('mobileFee');
+  if(now<end){
+    var d=Math.ceil((end-now)/86400000);
+    if(badge) badge.textContent = d<=1 ? '오늘 마감' : '마감 D-'+(d-1);
+  }else{
+    var early=document.querySelector('.reg-card--early');
+    if(early){early.classList.add('is-closed');var b=early.querySelector('.reg-card__btn');if(b)b.remove();}
+    if(badge) badge.textContent='할인등록 마감';
+    if(mob) mob.innerHTML='정상등록 <b>US$540 / 1인</b>';
+  }
+})();
+</script>
 </body>
 </html>
